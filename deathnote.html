@@ -1,0 +1,32 @@
+<html>
+  <head>
+    
+    
+    
+    
+  </head>
+  
+<body>
+  <p class="stem">SpongeBob</p>
+  <p class="stem">Plankton</p>
+  <p class="stem">Sandy</p>
+  <p class="stem">Patrick</p>
+
+    <button onclick="deathNote()">Random Death</button>
+    
+    <script>
+      function deathNote() {
+	var death = Math.floor(Math.random() * 4);
+  document.getElementsByClassName('stem')[death].innerHTML = "<img src='http://s3.birthmoviesdeath.com/images/made/happy_death_day_killer_1050_591_81_s_c1.jpg' width='10%'>";
+}
+      
+      
+      
+    </script>
+</body>
+  
+  
+  
+  
+  
+</html>
