@@ -1,0 +1,33 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+  <script>
+    function addAnother() {
+    var newListItem = document.createElement('li');
+    var x = document.getElementById('userInput').value;
+
+    var newText = document.createTextNode(x);
+
+    newListItem.appendChild(newText);
+
+    var position = document.getElementsByTagName('ul')[0];
+
+    position.appendChild(newListItem);
+  }
+  </script>
+ <input type="text" id="userInput">
+  <button onclick="addAnother()">
+  Click Here
+  </button>
+  <ul>
+    <li>Chicken</li>
+    <li>Duck</li>
+    <li>Goose</li>
+  </ul>
+  </body>
+  
+  
+  
+</html>
